@@ -1,0 +1,115 @@
+/*Основное*/
+.news-column-container > .row {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-block: 1em ;
+}
+
+
+.news-preview>img {
+    display: flex;
+    width: 170px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-header>a {
+    text-decoration: none;
+}
+
+
+.news-body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.news-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.news-body > .news-preview> img {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;  
+    border-radius: 10px;   
+}
+
+.heads-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-news > p {
+    margin: 10px;
+}
+.head-text > h2 {
+ margin-right: 50px;
+ text-align: left;
+}
+
+.head-text > .data {
+    align-items: center;
+    height: 24px;
+    float: right;
+}
+
+/*Медиа-запросы*/
+
+@media (max-width: 800px) {
+    .news-body > .news-preview> img {
+        display: flex;
+        width: 200px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-inline: 20px;  
+        border-radius: 10px;   
+    }
+
+    .heads-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .news-preview {
+        display: flex;
+        justify-content: center;
+        float: top;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .news-body > .news-preview> img {
+        display: flex;
+        width: 200px;
+        height: 100px;
+        justify-content: center;
+        align-items: top;
+        margin: 10px;  
+        border-radius: 10px;   
+    }
+
+}
