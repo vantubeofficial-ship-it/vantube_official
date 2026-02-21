@@ -14,6 +14,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="style/site_ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="style/site_ico/favicon-16x16.png">
     <link rel="manifest" href="style/site_ico/site.webmanifest">
+    <style>
+      .data{
+        --day--:"22.";
+        --month--:"02.";
+        --year--:"2026"
+      }
+      .day::after{content: var(--day--);}
+      .month::after{content: var(--month--);}
+      .year::after{content: var(--year--);}
+    
+    </style>
 </head>
 
 <body>
@@ -51,53 +62,24 @@
             </header>
 
             <section>
-                <div class="news-page">
+                <div class="news-text-page">
                     <h1>Новости VanTube</h1>
-                    <div class="news-column-container">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="news-container">
-                                    <div class="news-preview"><img src="style/VanTube News Preview 2.png" alt=""></div>
-                                    <div class="text-header">
-                                        <a href="новость№3.html">
-                                            <p>VanTube больше не будет получать обновления на Классике</p>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="news-body">
+                        <div class="news-preview"><img src="style/VanTube News Preview 2.png" alt=""></div>
+                        <div class="text-news">
+                            <div class="heads-text">
+                                <h2>VanTube больше не будет получать обновления на Классике</h2>
+                                <div class="data"><p class="data-main"><span class="day"></span><span class="month"></span><span class="year"></span></p></div>
                             </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="news-container">
-                                    <div class="news-preview"><img src="style/VanTube News Preview.png" alt=""></div>
-                                    <div class="text-header">
-                                        <a href="новость№2.html">
-                                            <p>У сайта VanTube появилась страница с новостями</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="news-container">
-                                        <div class="news-preview"><img src="style/VanTube News Preview.png" alt=""></div>
-                                        <div class="text-header">
-                                            <a href="новость№1.html">
-                                                <p>У VanTube появился официальный сайт</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="news-container">
-                                        <div class="news-preview"><img src="style/VanTube logo.png" alt=""></div>
-                                        <div class="text-header">
-                                            <a href="#">
-                                                <p>Здесь пока пусто</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p>VanTube перестанет обновлятся на версиях браузера "Козел" для Shindows SG Classic начиная с 1 марта 2026 года. Это связано с тем что поддержка Shindows SG Classic закончилась. Также это связано с тем что в ближайшем будущем сертификаты безопасности на версиях "Козла" для Shindows SG Classic станут устаревшими.</p>
+                            <p>Но несмотря на это пользователи смогут смотреть видео на VanTube и пользоваться режимом разработчика. Однако мы рекомендуем перейти на поддерживаемые версии Shindows SG, так пользоваться VanTube на Shindows SG Classic небезопасно (и Shindows может поломаться)</p>
+                            <p></p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+            </section>
+
             <footer>
                 <div class="footer-object">
                     <div class="footer-block" id="uridic-info">
