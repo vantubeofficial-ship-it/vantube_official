@@ -1,0 +1,191 @@
+/* Главное */
+p {margin: auto auto;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+h2 {font-size: larger;margin: 10px;}
+image{size: 1px}
+h1{text-align: center;}
+span {font-weight: bold;}
+
+/* Домашняя страница */
+
+.text-page {
+ text-align: center;
+}
+
+.title {
+ text-align: center;
+}
+
+.table-object {
+ display: block;  
+ text-align: center;
+}
+
+.table {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.table>.column {
+ display: block;
+ text-align: center;
+ align-items: center;
+ padding: 10px;
+ margin: 10px;
+ border: solid;
+ border-color: rgb(54, 54, 54);
+ width: 200px;
+ height: 100px;
+}
+
+.table> .column > p {
+ margin: auto auto;
+}
+
+.link {
+ text-align: center;
+}
+
+.video-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-catalog-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px; 
+}
+
+.video-catalog-row > .video-row> .video-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.video-catalog-row > .video-row> .video-item > .head > a {
+ text-decoration: none;
+ color: rgb(0, 140, 255);
+}
+
+.video-catalog-row > .video-row> .video-item > .video-preview > a > img {
+    width: 250px;
+    height: 150px;
+}
+/*Обратная связь*/
+
+.about-page > p{
+ margin: 10px;   
+}
+
+.contact-information>ul {
+ display: flex;
+ flex-direction: column;
+ list-style: none;
+ justify-content: center;
+ margin: 0;
+ padding: 0;
+}
+
+.contact-information>ul>li {
+ margin: 1em;
+ font-size: 1em;
+ text-align: center;
+}
+
+.contact-information>ul>li>a {
+ text-decoration: none;
+}
+
+.contact-information>ul>li>a>img { 
+ width: 1.5em;
+ margin-right: 1em;
+}
+
+/*Футер*/
+
+footer {
+ position: relative;
+ width: 100%;
+ top: 300px;
+}
+
+.footer-object {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ background-color: rgb(54, 54, 54);
+ color: white;
+}
+
+
+.footer-object > #links-footer, #uridic-info  {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin-left: 10px; ;
+}
+
+#links-footer {
+ margin-right: 10px;
+}
+
+#uridic-info > p {
+ margin: 12px ;
+}
+
+.footer-object #links-footer > a > img {
+ width: 25px;
+ margin: auto 5px;
+}
+
+/*Медиа-запросы*/
+
+@media (max-width: 800px) {
+    .footer-object #links-footer > a > img {
+           width: 50px;
+           margin: auto 5px;
+    }  
+    .video-catalog-row {
+        flex-direction: column;
+    }
+}
+   
+   @media (max-width: 510px) {
+       
+   .table {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .footer-object #links-footer > a > img {
+       width: 40px;
+       margin: auto 10px;
+   }  
+   
+   .video-row {
+    flex-direction: column;
+   }
+   }
+   
