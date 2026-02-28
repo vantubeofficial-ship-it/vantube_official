@@ -1,5 +1,5 @@
 /* Главное */
-
+p {margin: auto auto;}
 body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 h2 {font-size: larger;margin: 10px;}
 image{size: 1px}
@@ -47,6 +47,51 @@ span {font-weight: bold;}
  text-align: center;
 }
 
+.video-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-catalog-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px; 
+}
+
+.video-catalog-row > .video-row> .video-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.video-catalog-row > .video-row> .video-item > .head > a {
+ text-decoration: none;
+ color: rgb(0, 140, 255);
+}
+
+.video-catalog-row > .video-row> .video-item > .video-preview > a > img {
+    width: 250px;
+    height: 150px;
+}
 /*Обратная связь*/
 
 .about-page > p{
@@ -122,7 +167,10 @@ footer {
            width: 50px;
            margin: auto 5px;
     }  
-   }
+    .video-catalog-row {
+        flex-direction: column;
+    }
+}
    
    @media (max-width: 510px) {
        
@@ -136,5 +184,8 @@ footer {
        margin: auto 10px;
    }  
    
+   .video-row {
+    flex-direction: column;
+   }
    }
    
