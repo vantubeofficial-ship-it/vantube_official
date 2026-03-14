@@ -8,6 +8,15 @@ span {font-weight: bold;}
 
 /* Домашняя страница */
 
+.header-banner {
+    padding: 15px;
+    text-align: center;
+    font-size: medium;
+    border: solid;
+    border-color: rgb(54, 54, 54);
+    font-weight: bold;
+}
+
 .text-page {
  text-align: center;
 }
