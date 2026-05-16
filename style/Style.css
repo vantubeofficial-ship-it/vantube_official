@@ -4,8 +4,26 @@ body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 h2 {font-size: larger;margin: 10px;}
 image{size: 1px}
 h1{text-align: center;}
-span {font-weight: bold;}
-
+.inversed-text {
+    background-color: rgb(54, 54, 54); 
+    color: white;
+    padding-block: 0.5em;
+    border-radius: 0.2em;
+    text-align: center;
+    display: inline;
+    margin: 0.5em;
+}
+span {font-weight: bold;
+padding: 0;}
+.span-inversed-text {
+    background-color: rgb(54, 54, 54); 
+    color: white;
+    padding-block: 0.1em;
+    padding-inline: 0.2em;
+    border-radius: 0.2em;
+    text-align: center;
+    display: inline;  
+}
 /* Домашняя страница */
 
 .header-banner {
@@ -69,18 +87,10 @@ span {font-weight: bold;}
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin: 20px;
+    margin: 2em;
 }
 
-.video-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 20px; 
-}
-
-.video-catalog-row > .video-row> .video-item {
+.video-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,17 +99,17 @@ span {font-weight: bold;}
     border-style: solid;
     border-color: rgb(54, 54, 54);
     border-radius: 10px;
-    margin: 10px;
+    margin: 0.9em;
 }
 
-.video-catalog-row > .video-row> .video-item > .head > a {
+.video-item > .head > a {
  text-decoration: none;
  color: rgb(0, 140, 255);
 }
 
-.video-catalog-row > .video-row> .video-item > .video-preview > a > img {
-    width: 250px;
-    height: 150px;
+.video-item > .video-preview > a > img {
+    width: 14em;
+    height: 9em;
 }
 /*Обратная связь*/
 
@@ -171,14 +181,18 @@ footer {
 
 /*Медиа-запросы*/
 
+@media (max-width:1250px) {
+    .video-item > .video-preview > a > img {
+        width: 10em;
+        height: 7em;
+    }
+}
+
 @media (max-width: 800px) {
     .footer-object #links-footer > a > img {
            width: 50px;
            margin: auto 5px;
     }  
-    .video-catalog-row {
-        flex-direction: column;
-    }
 }
    
    @media (max-width: 510px) {
@@ -192,11 +206,7 @@ footer {
        width: 40px;
        margin: auto 10px;
    }  
-   
-   .video-row {
-    flex-direction: column;
-   }
-   }
+}
 
     .apps-container > .row {
         justify-content: center;
