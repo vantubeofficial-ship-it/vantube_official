@@ -69,6 +69,9 @@
                         <div class="input-search-parametrs-item">
                             <p>видео</p><input type="radio" id="input-search-video">
                         </div>
+                        <div class="input-search-parametrs-item">
+                            <p>новости</p><input type="radio" id="input-search-news">
+                        </div>
                     </div>
                 </div>    
                     <div id="search-list">
@@ -94,14 +97,22 @@
             const search_button = document.getElementById("search-action-button")
             const input_search_page = document.getElementById("input-search-page") 
             const input_search_video = document.getElementById("input-search-video")
+            const input_search_news = document.getElementById("input-search-news")
             const search_list = document.getElementById("search-list")
             input_search_page.addEventListener("click", function () {
                 input_search_page.checked = true
                 input_search_video.checked = false
+                input_search_news.checked = false
             })
             input_search_video.addEventListener("click", function () {
                 input_search_video.checked = true
                 input_search_page.checked = false
+                input_search_news.checked = false
+            })
+            input_search_news.addEventListener("click", function () {
+                input_search_news.checked = true
+                input_search_page.checked = false
+                input_search_video.checked = false
             })
             search_button.addEventListener("click", function () {
                 if (input_search_page.checked === true) {
@@ -131,6 +142,23 @@
                                 <img class="video-preview" src="${video.poster}" alt="">
                                 <h4>${video.name}</h4>
                                 <p class="search-list-item-description">${video.description}</p>
+                                
+                            </a>
+                        </div> 
+                        `
+                    }
+                });
+                }
+                if (input_search_news.checked === true) {
+                    search_list.innerHTML = ``
+                    NewsDatabase.forEach(news => {
+                    if (news.headers.includes(input_search)) {
+                        search_list.innerHTML += `
+                        <div class="search-list-item">
+                            <a href="новость.html?id=${news.id}">
+                                <img class="news-preview" src="${news.preview}" alt="">
+                                <h4>${news.headers}</h4>
+                                <p class="search-list-item-description">${news.text.slice(0,30) + "..."}</p>
                                 
                             </a>
                         </div> 
