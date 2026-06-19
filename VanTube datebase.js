@@ -84,8 +84,8 @@ const PageDatabase = [{id:"1", name:"Главная страница (index)", d
 {id:"3", name:"О нас (about)", description:"Здесь мы можете узнать дополнительную информацию и историю о VanTube", url:"о нас.html"},
 {id:"4", name:"Сообщество", description:"Подробнее об сообществе VanTube", url:"сообщество.html"},
 {id:"5", name:"Новости", description:"Здесь можно узнать о последних новостях и обновлениях VanTube", url:"новости.html"},
-{id:"6", name:"Другие сервисы", description:"Информация и ссылки на другие сервисы VanTube Inc", url:"другие сервисы.html"
-}];
+{id:"6", name:"Другие сервисы", description:"Информация и ссылки на другие сервисы VanTube Inc", url:"другие сервисы.html"},
+{id:"7", name:"Видео", description:"Страница с рекомендованными видео для просмотра", url:"видео.html"}];
 
 const VideoDatabase = [{ id:"1", name:"Windows в PowerPoint'е", src:"video_in_vantube/style/video №1.mp4", poster:"https://i.ytimg.com/vi/I5VcCqK6pPM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2I1wynZtq9pTQjCZqIJN0_f_XzQ", description:`Посмотреть полное видео с более хорошим качеством можно в <a href="https://t.me/VanTube_official/2">нашем TG</a>`, author:"Vanko Corporation"}, 
 { id:"2", name:"Windows 8 в PowerPoint'е", src:"video_in_vantube/style/video №2.mp4", poster:"https://i.ytimg.com/vi/hmSQgVujhhA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDC8VSK1HJhJJafhNsBH8EXOSK3zQ", description:`Посмотреть полное видео с более хорошим качеством можно в <a href="https://t.me/VanTube_official/6">нашем TG</a>`, author:"Vanko Corporation"}, 
